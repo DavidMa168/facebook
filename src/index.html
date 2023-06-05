@@ -7,14 +7,27 @@
     <title>布魯斯TailwindCSS教學</title>
   </head>
   <body class="bg-fb-bg">
-    <button id="btn" class="py-3 px-5 bg-white active:bg-gray-300">按我改變顏色</button>
+    <header class="w-full h-[56px] bg-fb-header fixed top-0 left-0 right-0"></header>
 
-    <p id="text" class="mt-3 text-xl">我是文字</p>
-    <div id="box">
-    </div>
-    <ul id="boxul">
+    <main class="min-h-[100vh] pt-main-span flex">
+      <!-- 左側資訊欄 -->
+        <div class="hidden sticky top-main-span max-w-[360px] w-full h-full lg:block">
+          <p class="w-full bg-blue-300">左側資訊欄</p>
+        </div>
 
-    </ul>
+      <!-- 動態牆 -->
+        <div class="max-w-[744px] w-full mx-auto">
+          <p class="w-full bg-white">動態牆</p> 
+        </div>
+
+      <!-- 右側聯絡人 -->
+      <div class="hidden sticky top-main-span max-w-[360px] w-full h-full lg:block">
+        <p class="w-full bg-green-300">右側聯絡人</p>
+      </div>
+
+
+    </main>
+    
     <script src="./index.js"></script>
   </body>
 </html>
